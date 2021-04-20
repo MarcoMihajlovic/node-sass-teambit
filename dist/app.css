@@ -146,6 +146,9 @@ main {
   text-align: center;
   margin: 20px 0;
 }
+.teambitAbout .container2:nth-child(2) {
+  border-bottom: none;
+}
 
 .aboutImage {
   display: flex;
@@ -160,4 +163,42 @@ main {
 .container2 {
   width: 900px;
   margin: 0 auto;
+}
+
+.work {
+  width: 100%;
+  padding: 30px 15px;
+}
+
+.workRow {
+  display: flex;
+  width: 100%;
+}
+
+.imageHalf {
+  width: 50%;
+}
+.imageHalf img {
+  width: 100%;
+}
+
+.imageQuarter {
+  width: 25%;
+}
+.imageQuarter img {
+  width: 100%;
+  margin: 20px 0;
+}
+.imageQuarter p {
+  margin: 15px 0;
+}
+.imageQuarter a {
+  color: #2c4792;
+}
+.imageQuarter a:hover {
+  text-decoration: underline;
+}
+
+.right {
+  justify-content: flex-end;
 }

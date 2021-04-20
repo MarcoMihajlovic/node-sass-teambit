@@ -163,6 +163,10 @@ main {
             text-align: center;
             margin: 20px 0;
         }
+
+        &:nth-child(2) {
+            border-bottom: none;
+        }
     }
 }
 
@@ -179,4 +183,38 @@ main {
 
 .container2 {
     @include container2;
+}
+
+.work {
+    width: 100%;
+    padding: 30px 15px;
+}
+
+.workRow {
+    display: flex;
+    width: 100%;
+}
+
+.imageHalf {
+    @include imageHalf;
+}
+
+.imageQuarter {
+    @include imageQuarter;
+
+    p {
+        margin: 15px 0;
+    }
+
+    a  {
+        color: $googleBlue;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.right {
+    justify-content: flex-end;
 }

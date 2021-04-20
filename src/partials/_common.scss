@@ -22,3 +22,18 @@
     display: flex;
     flex-direction: row;
 }
+
+@mixin imageHalf {
+    width: 50%;
+    img {
+        width: 100%;
+    }
+}
+
+@mixin imageQuarter {
+    width: 25%;
+    img {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
