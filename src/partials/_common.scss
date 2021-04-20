@@ -1,0 +1,19 @@
+@mixin container {
+    width: 1070px;
+    margin: 0 auto;
+}
+
+@mixin flexBetween {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin flexMiddle {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flexRow {
+    display: flex;
+    flex-direction: row;
+}

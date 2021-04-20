@@ -1,0 +1,145 @@
+@import "partials/common";
+@import "partials/variables";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: calc(100vh - 70px);
+    width: 100%;
+    color: $mainColor;
+    font-family: $font;
+}
+
+a {
+    color: $mainColor;
+    text-decoration: none;
+}
+
+.container {
+    @include container;
+}
+
+header {
+    background-color: white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    .container {
+
+        .header {
+            height: 70px;
+            @include flexBetween;
+            border-bottom: 3px solid $mainColor;
+            align-items: center;
+
+            img {
+                height: 35px;
+            }
+        
+            a {
+                margin: 0 10px;
+        
+                i {
+                    margin-left: 5px;
+                }
+            }
+        
+            .header-right {
+                @include flexMiddle;
+                flex-direction: row;
+            }
+        }
+    }
+}
+
+.signUp {
+    border: 2px solid $googleBlue;
+    color: $googleBlue;
+    @include flexMiddle;
+    border-radius: 10px;
+
+    strong {
+        margin-right: 10px;
+    }
+
+    &:hover {
+        background-color: $googleBlue;
+        color: white;
+        cursor: pointer;
+    }
+
+    img {
+        width: 20px;
+        margin: 0 10px;
+    }
+}
+
+main {
+    width: 100%;
+    font-size: $fontSize;
+}
+
+.jumbotron {
+    width: 100%;
+    margin-top: 70px;
+    font-size: 20px;
+    
+    .container {
+        @include flexRow;
+    }
+}
+
+.jumbotron-right {
+    width: 50%;
+
+    img {
+        width: 100%;
+    }
+}
+
+.jumbotron-left {
+    width: 50%;
+    padding-top: 50px;
+
+    h2 {
+        margin: 20px 0;
+    }
+
+    p {
+        margin-bottom: 20px;
+
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+
+    .signUp {
+        background-color: $googleBlue;
+        color: white;
+        cursor: pointer;
+        padding-right: 10px;
+        margin: 0 10px;
+    }
+}
+
+.buttons {
+    @include flexRow;
+    align-items: center;
+    margin: 20px 0;
+
+    p {
+        margin: 0 10px;
+    }
+}
+
+.teambitAbout {
+    width: 100%;
+    background-color: $teambitColor;
+}

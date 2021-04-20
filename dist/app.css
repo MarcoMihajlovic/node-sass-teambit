@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: calc(100vh - 70px);
+  width: 100%;
+  color: #58402c;
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  color: #58402c;
+  text-decoration: none;
+}
+
+.container {
+  width: 1070px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: white;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+header .container .header {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px solid #58402c;
+  align-items: center;
+}
+header .container .header img {
+  height: 35px;
+}
+header .container .header a {
+  margin: 0 10px;
+}
+header .container .header a i {
+  margin-left: 5px;
+}
+header .container .header .header-right {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.signUp {
+  border: 2px solid #2c4792;
+  color: #2c4792;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+.signUp strong {
+  margin-right: 10px;
+}
+.signUp:hover {
+  background-color: #2c4792;
+  color: white;
+  cursor: pointer;
+}
+.signUp img {
+  width: 20px;
+  margin: 0 10px;
+}
+
+main {
+  width: 100%;
+  font-size: 16px;
+}
+
+.jumbotron {
+  width: 100%;
+  margin-top: 70px;
+  font-size: 20px;
+}
+.jumbotron .container {
+  display: flex;
+  flex-direction: row;
+}
+
+.jumbotron-right {
+  width: 50%;
+}
+.jumbotron-right img {
+  width: 100%;
+}
+
+.jumbotron-left {
+  width: 50%;
+  padding-top: 50px;
+}
+.jumbotron-left h2 {
+  margin: 20px 0;
+}
+.jumbotron-left p {
+  margin-bottom: 20px;
+}
+.jumbotron-left p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.jumbotron-left .signUp {
+  background-color: #2c4792;
+  color: white;
+  cursor: pointer;
+  padding-right: 10px;
+  margin: 0 10px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px 0;
+}
+.buttons p {
+  margin: 0 10px;
+}
+
+.teambitAbout {
+  width: 100%;
+  background-color: #ffe7d2;
+}
