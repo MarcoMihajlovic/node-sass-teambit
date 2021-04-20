@@ -3,6 +3,11 @@
     margin: 0 auto;
 }
 
+@mixin container2 {
+    width: 900px;
+    margin: 0 auto;
+}
+
 @mixin flexBetween {
     display: flex;
     justify-content: space-between;
