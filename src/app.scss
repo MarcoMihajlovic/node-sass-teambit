@@ -55,6 +55,12 @@ header {
             .header-right {
                 @include flexMiddle;
                 flex-direction: row;
+
+                a {
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
             }
         }
     }

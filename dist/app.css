@@ -51,6 +51,9 @@ header .container .header .header-right {
   align-items: center;
   flex-direction: row;
 }
+header .container .header .header-right a:hover {
+  text-decoration: underline;
+}
 
 .signUp {
   border: 2px solid #2c4792;
