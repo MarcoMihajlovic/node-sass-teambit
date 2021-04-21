@@ -13,6 +13,22 @@
     justify-content: space-between;
 }
 
+@mixin signButton {
+    .signUp {
+        background-color: $googleBlue;
+        color: white;
+        cursor: pointer;
+        padding-right: 10px;
+        margin: 0 10px;
+    }
+}
+
+@mixin flexCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 @mixin flexMiddle {
     display: flex;
     align-items: center;
@@ -21,6 +37,11 @@
 @mixin flexRow {
     display: flex;
     flex-direction: row;
+}
+
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
 }
 
 @mixin imageHalf {
@@ -36,4 +57,10 @@
         width: 100%;
         margin: 20px 0;
     }
+}
+
+@mixin co-foundersSapce {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 15px;
 }
